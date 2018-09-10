@@ -6,8 +6,7 @@ class Client {
 
 	private $apiKey;
 
-	//private $baseUrl = 'http://www.sms24.se/api';
-	private $baseUrl = 'http://127.0.0.1:8000/api';
+	private $baseUrl = 'http://www.sms24.se/api';
 
 	public function __construct($apiKey) {
 		$this->apiKey = $apiKey;
