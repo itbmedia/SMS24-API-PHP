@@ -1,5 +1,5 @@
 {
-    "name": "itbmedia/SMS24-API-PHP",
+    "name": "itbmedia/sms24-api-php",
     "description": "Send sms through SMS24 Api",
     "keywords": [
         "sms",
