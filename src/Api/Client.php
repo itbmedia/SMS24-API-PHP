@@ -176,7 +176,7 @@ class Client {
         	throw new \Exception('Invalid response from server');
         }
         if (array_key_exists("error", $response)) {
-			//throw new \Exception($response['error']['message'], $response['error']['code']);
+			throw new \Exception($response['error']['message'], $response['error']['code']);
 		}
 
         $errno = curl_errno($ch);
