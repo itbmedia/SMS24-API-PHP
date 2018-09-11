@@ -15,12 +15,16 @@ class Originator implements \JsonSerializable {
 	private $createdAt;
 
 	public function __construct($title = null, $type = null) {
-		$this->setTitle($title);
 		if ($type) {
 			$this->setType($type);
 		}
+		$this->setTitle($title);
 	}
 	public function setTitle($title) {
+		if (($title) && ($this->getType() == 'alpha')) {
+            //Max 11 characters
+            $title = substr($title, 0, 11);
+        }
 		$this->title = $title;
 		return $this;
 	}
