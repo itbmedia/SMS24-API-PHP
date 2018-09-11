@@ -1,7 +1,7 @@
 SMS24 - Api Client for PHP
 ========================================
 
-In your admin screen of sms24 you can generate an API Key for your account to send SMS
+In your admin screen of [http://www.sms24.se/](http://www.sms24.se/) you can generate an API Key for your account to send SMS
 
 
 Installation through composer
